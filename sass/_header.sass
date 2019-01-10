@@ -1,0 +1,188 @@
+header
+	background-image: linear-gradient(to top, rgba(49, 53, 79, 0.5), rgba(49, 53, 79, 1)), url(../img/fon.png)
+	background-repeat: no-repeat
+	background-position: left
+	background-size: cover
+	height: 720px
+	padding-top: 50px
+
+body
+	box-sizing: border-box
+	font-family: 'Roboto', sans-serif
+a
+	text-decoration: none
+.wrap
+	width: 65%
+	padding:
+		right: 30px
+		left: 30px
+	margin: 0 auto
+	
+
+	
+.header_block
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&_title_1
+		font-size: 65px
+		color: rgba(255, 255, 255, 255)
+		text-align: center
+		margin-top: 156px
+		text-transform: uppercase
+		font-weight: 700
+		line-height: 1.2
+	&_title_2
+		font-size: 22px
+		color: rgba(255, 255, 255, 255)
+		margin-top: 40px
+		text-align: center
+
+	
+.header_block_logo
+	text-transform: uppercase
+	font-size: 25px
+	display: inline-block
+	&:hover
+		cursor: pointer
+		& .active
+			color: #2387A6
+		& .box
+			color: #FFB800
+			transition: .2s
+.active
+	color: #66697E
+.box
+	color: #fff
+	margin-left: -5px
+	
+.menu_block a
+	display: inline-block
+	text-transform: uppercase
+	font-family: 'Raleway', sans-serif
+	opacity: 0.75
+	color: #fff
+	font-size: 13px
+	font-weight: 700
+	margin-left: 45px
+	cursor: pointer
+	&:first-child
+		color: #FFB800
+		margin-bottom: 10px
+		
+	&:hover
+		color: #fff
+		opacity: 0.5
+		transition: .3s
+	&:not(:nth-child(1)):after
+		content: ''
+		border-bottom: 2px solid #fff
+		display: block
+		margin-top: 10px
+		transform: scaleX(0)
+		transition: .4s
+	&:hover:after
+		opacity: 0.75
+		transform: scaleX(1)
+		transition: .4s
+.line
+	&:after
+		content: ''
+		border-bottom: 1px solid #fff
+		display: block
+		margin-top: 40px
+		opacity: 0.5
+
+.block_button
+	text-align: center
+	margin-top: 77px
+	
+.button
+	font-size: 13px
+	color: #fff
+	padding:
+		top: 18px
+		bottom: 18px
+		left: 50px
+		right: 50px
+	background-color: #e84545
+	outline: none
+	text-transform: uppercase
+	border-radius: 4px
+	border: 2px solid #e84545
+	cursor: pointer
+	transition: .4s
+	position: relative
+	&:hover
+		opacity: .8
+		transition: .4s
+	&:after, &:before
+		content: ''
+		background-color: #fff
+		position: absolute
+		left: -2px
+		right: -2px
+		top: -2px
+		bottom: -2px 
+		border-radius: 10px
+		opacity: 0
+
+	&:hover:after, &:hover:before
+		animation: pulse .6s linear infinite
+	&:hover:before
+		animation-delay: 0.2s
+
+@keyframes pulse
+	0%
+		transform: scale(0.1)
+		opacity: 0
+	50%
+		opacity: 0.2
+	100%
+		transform: scale(1)
+		opacity: 0
+
+
+@media screen and (max-width: 1100px)
+	.header_block_logo
+		display: block
+	.menu_block a
+		display: block
+	.header_block_title_1
+		font-size: 40px
+		margin-top: 60px
+@media screen and (max-width: 720px)
+		.header_block_title_1
+			font-size: 30px
+			margin-top: 50px
+		.header_block_title_2
+			font-size: 17px
+@media screen and (max-width: 450px)
+	header
+		height: 560px
+	.header_block
+		display: block
+		text-align: center
+	.menu_block a
+		margin-left: 0
+		&:first-child
+			margin-top: 20px
+	.header_block_title_1
+			font-size: 20px
+			margin-top: 36px
+	.header_block_title_2
+			font-size: 15px
+			text-align: justify
+
+	.line
+		&:after
+			margin-top: 20px
+
+	.block_button
+		margin-top: 50px
+
+		
+
+
+	
+	

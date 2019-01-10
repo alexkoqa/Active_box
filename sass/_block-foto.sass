@@ -1,0 +1,65 @@
+.block-foto
+	text-align: center
+	
+.wrap-foto
+	max-width: calc(100% / 4)
+	position: relative
+	overflow: hidden
+	display: inline-block
+	margin: -2px
+	font-size: 0px
+	
+	&:hover
+		& .position-foto
+			transform: scale(1.5)
+			transition: 0.4s
+			background-color: red
+		& .block-title
+			transition: 0.4s
+			opacity: 1
+
+.position-foto
+	max-width: 100%
+	transition: 0.4s
+	height: 350px
+	
+.block-title
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	background-color: rgba(232, 69, 69, 0.9)
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	opacity: 0
+	transition: opacity .5s
+	overflow: hidden
+	color: #fff
+
+.block-foto-title-1
+	font-size: 15px
+	font-weight: 700
+	text-transform: uppercase
+	margin-bottom: 15px
+	
+.block-foto-title-2	
+	font-size: 15px
+	font-weight: 400
+	text-transform: uppercase
+
+
+@media screen and (max-width: 1100px)
+	.wrap-foto
+		max-width: calc(100% / 2)
+@media screen and (max-width: 650px)
+	.wrap-foto
+		max-width: calc(100% / 1)
+		margin-right: 15px
+		margin-left: 15px
+		margin-bottom: 15px
+	.position-foto
+		height: auto
+		
