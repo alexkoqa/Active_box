@@ -321,8 +321,6 @@ a {
 }
 
 .block_img {
-  width: 60px;
-  height: 60px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   margin-top: 15px;
