@@ -280,7 +280,6 @@ a {
 .advantages_block {
   display: inline-block;
   text-align: center;
-  cursor: pointer;
   padding-left: 15px;
   padding-right: 15px;
   width: calc(100% / 3 - 33px);
