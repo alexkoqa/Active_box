@@ -1,0 +1,66 @@
+.block_for
+	display: flex
+	font-size: 0
+	&_1_img, &_2
+		display: inline-block
+		width: 50%
+		min-height: 283px
+
+	&_2
+		background-color: #53354a
+		padding-top: 114px
+		padding-bottom: 107px
+		padding-left: 85px
+
+		&_title
+			font-family: 'Charm', cursive
+			font-size: 36px
+			color: #fff
+			margin-bottom: 30px
+			width: 500px
+			text-align: justify
+			line-height: 1.2
+
+			&_2
+				font-size: 13px
+				color: #fff
+				text-transform: uppercase
+				margin-bottom: 64px
+.round1
+	border: 1px solid #755d6e
+	width: 10px
+	height: 10px
+	border-radius: 50% 
+	margin-right: 10px
+	display: inline-block
+	background-color: #fff
+	&:not(:nth-child(2))
+		background-color: #755d6e
+
+@media screen and (max-width: 1250px)
+	.block_for
+		flex-direction: column
+	.block_for_1_img
+		width: 100%
+	.block_for_2
+		width: 100%
+		padding-left: 0
+		text-align: center
+	.block_for_2_title
+		display: inline-block
+		text-align: center
+@media screen and (max-width: 540px)
+	.block_for_2_title
+		font-size: 20px
+		width: 250px
+		line-height: 1.2
+	.block_for_2_title_2
+		font-size: 10px
+	.block_for_2
+		padding-top: 80px
+		padding-bottom: 30px
+	
+				
+
+		
+	
