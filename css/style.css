@@ -88,10 +88,12 @@ a {
   font-weight: 700;
   margin-left: 45px;
   cursor: pointer;
+  margin-top: 10px;
 }
 .menu_block a:first-child {
   color: #FFB800;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .menu_block a:hover {
   color: #fff;
@@ -229,7 +231,7 @@ a {
 }
 @media screen and (max-width: 450px) {
   header {
-    height: 560px;
+    height: 600px;
   }
 
   .header_block {
