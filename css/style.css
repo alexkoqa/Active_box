@@ -65,8 +65,8 @@ a {
 }
 .header_block_logo:hover .box {
   color: #FFB800;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .active {
@@ -145,14 +145,12 @@ a {
   border-radius: 4px;
   border: 2px solid #e84545;
   cursor: pointer;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
   position: relative;
 }
 .button:hover {
   opacity: 0.8;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 .button:after, .button:before {
   content: "";
@@ -293,21 +291,21 @@ a {
 .advantages_block:hover .advantages_block_title {
   color: red;
   opacity: 0.8;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .advantages_block:hover .advantages_block_description {
   opacity: 0.8;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .advantages_block:hover .block_img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .advantages_block_title {
   font-size: 18px;
@@ -498,15 +496,13 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 5px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
   cursor: pointer;
+  -webkit-transition: color 0.4s linear, border 0.4s linear;
+  transition: color 0.4s linear, border 0.4s linear;
 }
 .fb:hover, .twitter:hover, .linkid:hover {
   color: #0148DE;
   border: 1px solid #0148DE;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 .main_block {
@@ -692,6 +688,7 @@ a {
 }
 .icon_1:hover {
   border: 2px solid #fff;
+  color: #E84545;
 }
 
 @media screen and (max-width: 700px) {
